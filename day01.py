@@ -47,7 +47,8 @@ print('Add a new key "city" with value "Junagadh" : ', student)
 print('Calculate average of marks and print it : ',sum(student["marks"])/len(student["marks"]))
 # 4. Print all keys, then all values
 print('Print all keys : ',student.keys())
-print('Print all values : ',student.items())
+# print('Print all values : ',student.items()) #this is wrong
+print('Print all values : ',student.values())
 # 5. Check if "email" key exists, print True/False
 print("Email Exist" if "email" in student else "Email is not exist")
 
@@ -79,7 +80,7 @@ def add_numbers(a, b):
 
 def is_even(n):
     # return True if n is even, False if odd
-    return True if n/2 == 0 else False
+    return True if n%2 == 0 else False
 
 def find_max(numbers):
     # given a list, return the largest number
@@ -137,7 +138,7 @@ def get_grade(avg):
     elif avg <=75 and avg > 60:
         return "C"
     else:
-        return "D"
+        return "F"
 
 # Loop through students, print:
 #   "Raj: avg=84.3, grade=B"
@@ -145,13 +146,14 @@ def get_grade(avg):
 #   "Amit: avg=71.7, grade=C"
 for student in students:
     avg = get_average(student["marks"])
-    print(f'students[name]: avg={avg:.2f}, grade={get_grade(avg)}')
+    print(f'{student["name"]}: avg={avg:.2f}, grade={get_grade(avg)}')
 
 '''
 Today I Learn About Datatypes and i was confuse in dictionary 
 when add new item but i do not use google or any ai i just start thinking
 why, where's the actul problem then i try some syntax and suddenly remember
 how to insert new key value pair in dictionary it was really fun. 
+And Yes First In Comments i predict the output and then run the file
 this is warm up for me i remember all the fundaments 
 when i start writing code it was fun and honestly i do not feel lazzy or bored
 i love coding 
