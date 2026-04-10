@@ -47,9 +47,9 @@ while i <= 5:
 #    print "Access granted" when correct
 print('Keep asking user for a password until they type "python123"')
 while 1:
-    p = input("Enter Password : ")
-    p.lower()
-    p.strip()
+    p = input("Enter Password : ").lower().split()
+    # p.lower()  Strings in Python are immutable. .lower() returns a new string — it does not modify p in place. You must reassign.
+    # p.strip()
     if p == "python123":
         print("Access granted")
         break
@@ -72,7 +72,7 @@ numbers = [4, 7, 2, 9, 1, 5, 8, 3, 6]
 
 # 1. Print only numbers greater than 5
 print('Print only numbers greater than 5')
-print(n for n in numbers if n > 5)
+print([n for n in numbers if n > 5])
 
 # 2. Create a new list with each number squared
 #    do this WITH a for loop first
@@ -80,9 +80,9 @@ print(n for n in numbers if n > 5)
 print('Create a new list with each number squared WITH a for loop')
 squered_list = []
 for i in numbers:
-    squered_list.append(i*2)
+    squered_list.append(i**i)
 print(squered_list)
-squered_list2 = [n*2 for n in numbers]
+squered_list2 = [n**n for n in numbers]
 print('list comprehension ', squered_list2)
 
 # 3. Separate the list into two lists:
@@ -180,6 +180,8 @@ Many developers love Python because Python is simple."""
 print(len(text.split()))
 # 2. Count how many times "Python" appears (case-insensitive)
 print(text.count("Python"))
+
+
 # 3. Find the longest word in the text
 l = set(text.split())
 large = {n:len(n) for n in l}
@@ -220,3 +222,14 @@ for k,v in d.items():
         
      
 print(f'{fv} : {f} - > {sv} : {s} -> {tv} : {t}')
+
+#Second method
+sorted_words = sorted(d.items(), key=lambda x: x[1], reverse=True)
+top3 = sorted_words[:3]
+print(top3)
+
+'''
+Today's Chalange was little bit hard but i like to solve these complex problem
+we can not say this to complex but yeah it was fun
+last project was little bit hard it takes time to solve the probelm but yeah i did it
+'''
