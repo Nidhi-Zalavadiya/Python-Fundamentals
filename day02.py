@@ -47,7 +47,7 @@ while i <= 5:
 #    print "Access granted" when correct
 print('Keep asking user for a password until they type "python123"')
 while 1:
-    p = input("Enter Password : ").lower().split()
+    p = input("Enter Password : ").lower().strip()
     # p.lower()  Strings in Python are immutable. .lower() returns a new string — it does not modify p in place. You must reassign.
     # p.strip()
     if p == "python123":
@@ -80,7 +80,7 @@ print([n for n in numbers if n > 5])
 print('Create a new list with each number squared WITH a for loop')
 squered_list = []
 for i in numbers:
-    squered_list.append(i**i)
+    squered_list.append(i**2)
 print(squered_list)
 squered_list2 = [n**n for n in numbers]
 print('list comprehension ', squered_list2)

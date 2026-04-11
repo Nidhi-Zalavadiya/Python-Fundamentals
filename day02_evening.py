@@ -17,7 +17,7 @@ for item in gen:
 # Try to iterate it again — what happens? why?
 for item in gen:
     print(item) 
-# I don't know why nothing is printed here...
+#nothing will printed here bcs this is generator and generators do not consume memmory and this is we can itereate it single time only
 # surprising result — write why in a comment
 
 
@@ -98,10 +98,10 @@ Many developers love Python because Python is simple."""
 text_set = set(text.split())
 len_dictionary = {word : len(word) for word in text_set}
 
-large_lenght, big_word = 0, ""
+large_length, big_word = 0, ""
 
-for word, lenght in len_dictionary.items():
-    if lenght > large_lenght:
-        big_word, large_lenght = word, lenght
+for word, length in len_dictionary.items():
+    if length > large_length:
+        big_word, large_length = word, length
 
-print(f'{big_word} is the largest word in text with {large_lenght} latters')
+print(f'{big_word} is the largest word in text with {large_length} letters')
