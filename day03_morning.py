@@ -129,16 +129,23 @@ print(student1)   # should print nicely — not <__main__.Student object>
 #Mini project — Bank Account class 
 #Build a complete BankAccount class
 class BankAccount:
+    '''
+        Bank account class is contains data of account holder and transaction histrory
+    '''
     # __init__: owner name, account number, initial balance=0
     # All amounts stored in self.balance
     # Keep a self.transactions list — record every deposit/withdrawal
     def __init__(self, owner_name, account_number, balance = 0):
+        ''' This is the __init__ method for declare variables for each instance'''
         self.owner_name = owner_name
         self.account_number = account_number
         self.balance = balance
         self.transaction = []
 
     def deposit(self, amount):
+        ''' 
+            This method is for deposite amount in account
+        '''
         # add amount to balance
         # add to transactions: "Deposited: 500"
         # if amount <= 0: print "Invalid amount" and return
@@ -150,6 +157,9 @@ class BankAccount:
             print(f"{amount} deposited")
 
     def withdraw(self, amount):
+        '''
+            Withdraw amount form account
+        '''
         # subtract from balance
         # add to transactions: "Withdrew: 200"
         # if amount > self.balance: print "Insufficient funds"
@@ -164,10 +174,16 @@ class BankAccount:
             print(f'{amount} withdrew')
 
     def get_balance(self):
+        '''
+            Returns current balace
+        '''
         # return current balance
         return self.balance
 
     def show_transactions(self):
+        '''
+            show each transaction line by line
+        '''
         # print all transactions one by one
         for transection in self.transaction:
             print(transection)
