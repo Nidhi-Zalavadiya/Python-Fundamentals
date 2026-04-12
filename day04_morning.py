@@ -1,4 +1,4 @@
-#Task 1 — File I/O: read and write (5:40–6:15 AM)
+#Task 1 — File I/O: read and write 
 #A Write to a file — 4 operations
 # 1. Create a file called "notes.txt" and write 3 lines to it
 #    "Python is powerful"
@@ -74,7 +74,7 @@ with open("H:\\Python Fundamentals\\Day04 Flie handling\\students.csv", 'r') as 
     print(count)
 
 
-#Task 2 — Exception handling (6:15–6:50 AM)
+#Task 2 — Exception handling 
 # A Basic try/except — handle these 5 common errors
 # For each one: write code that causes the error,
 # then wrap it in try/except and handle it gracefully
