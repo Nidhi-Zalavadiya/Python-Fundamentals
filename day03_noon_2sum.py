@@ -12,7 +12,7 @@ class Solution:
             if need in seen:
                 return [seen[need],i]
             seen[nums[i]] = i
-
+    
 
 s1 = Solution()
 print(s1.twoSum([2,7,11,15],10))
