@@ -65,13 +65,7 @@ class BankAccount:
         return (f'Account[{self.account_number}] | Owner: {self.owner_name} | Balance: ₹{self.balance}')
 
 
-
-
-
-def main():
-    #Task 1 — your first class (5:40–6:00 AM)
-    #A Build a Student class from scratch
-    class Student:
+class Student:
         # __init__ takes: name, age, marks (list)
         # store all three as instance variables
         def __init__(self, name, age, marks):
@@ -105,9 +99,13 @@ def main():
         def add_mark(self, mark):
             # add a new mark to self.marks
             self.marks.append(mark)
-            
-            
 
+
+
+def main():
+    #Task 1 — your first class (5:40–6:00 AM)
+    #A Build a Student class from scratch
+       
     # Test your class — create 3 student objects
     student1 = Student("Raj", 21, [85, 90, 78])
     student2 = Student("Priya", 22, [92, 88, 95])
