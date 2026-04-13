@@ -1,106 +1,7 @@
 #Mini project — Bank Account class 
 #Build a complete BankAccount class
-class BankAccount:
-    '''
-        Bank account class is contains data of account holder and transaction histrory
-    '''
-    # __init__: owner name, account number, initial balance=0
-    # All amounts stored in self.balance
-    # Keep a self.transactions list — record every deposit/withdrawal
-    def __init__(self, owner_name, account_number, balance = 0):
-        ''' This is the __init__ method for declare variables for each instance'''
-        self.owner_name = owner_name
-        self.account_number = account_number
-        self.balance = balance
-        self.transaction = []
-
-    def deposit(self, amount):
-        ''' 
-            This method is for deposite amount in account
-        '''
-        # add amount to balance
-        # add to transactions: "Deposited: 500"
-        # if amount <= 0: print "Invalid amount" and return
-        if amount <= 0:
-            print("Invalid amount")
-        else:
-            self.balance += amount
-            self.transaction.append(f"Deposited : {amount}")
-            print(f"{amount} deposited")
-
-    def withdraw(self, amount):
-        '''
-            Withdraw amount form account
-        '''
-        # subtract from balance
-        # add to transactions: "Withdrew: 200"
-        # if amount > self.balance: print "Insufficient funds"
-        # if amount <= 0: print "Invalid amount"
-        if amount > self.balance:
-            print(f'Insufficient funds')
-        elif amount <= 0:
-            print("Invalid amount")
-        else:
-            self.balance -= amount
-            self.transaction.append(f"Withdrew : {amount}")
-            print(f'{amount} withdrew')
-
-    def get_balance(self):
-        '''
-            Returns current balace
-        '''
-        # return current balance
-        return self.balance
-
-    def show_transactions(self):
-        '''
-            show each transaction line by line
-        '''
-        # print all transactions one by one
-        for transaction in self.transaction:
-            print(transaction)
-
-    def __str__(self):
-        # "Account[ACC001] | Owner: Raj | Balance: ₹1500"
-        return (f'Account[{self.account_number}] | Owner: {self.owner_name} | Balance: ₹{self.balance}')
-
-
-class Student:
-        # __init__ takes: name, age, marks (list)
-        # store all three as instance variables
-        def __init__(self, name, age, marks):
-            self.name = name
-            self.age = age
-            self.marks = marks
-
-        def get_average(self):
-            # calculate and return average of marks
-            avg = sum(self.marks) / len(self.marks)
-            return avg 
-
-        def get_grade(self):
-            # return "A", "B", "C", or "F"
-            # A=90+, B=75+, C=60+, F=below 60
-            avg = self.get_average()
-            if avg > 90:
-                return ("A")
-            elif avg > 75 and avg <= 90:
-                return ("B")
-            elif avg > 60 and avg <= 75:
-                return ("C")
-            else:
-                return ("F")
-
-        def introduce(self):
-            # return a string like:
-            # "Hi, I am Raj, age 21, grade B"
-            return (f'Hi, I am {self.name}, age {self.age}, grade {self.get_grade()}')
-
-        def add_mark(self, mark):
-            # add a new mark to self.marks
-            self.marks.append(mark)
-
-
+from models.bank_account import BankAccount
+from models.student import Student
 
 def main():
     #Task 1 — your first class (5:40–6:00 AM)
@@ -211,4 +112,4 @@ def main():
     print(account2)
 
 if __name__ == "__main__":
-    pass
+    main()

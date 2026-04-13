@@ -56,7 +56,7 @@ def add_student(filename, name, age, marks):
     """
     try:
         with open(f"Student Management System/{filename}", 'a') as f:
-            f.write(f"{name},{age},{','.join(map(str, marks))}")
+            f.write(f"{name},{age},{','.join(map(str, marks))}\n")
     except IOError:
         raise IOError("can not write in file ", filename)
     except ValueError:
@@ -75,14 +75,14 @@ def find_student(filename, name):
             students_l = f.readlines()
             list_of_students = [students_list.strip().split(',') for students_list in students_l]
             for student in list_of_students:
-                if name == student[0].strip().lower():                  
+                if name.lower() == student[0].strip().lower():                  
                     return Student(student[0],student[1],[int(mark) for mark in student[2:]])
             
     except Exception as e:
         print(e)
 
 # Test the full system:
-from day03_morning import Student
+from models.student import Student
 
 students = [
     Student("Raj", 21, [85, 90, 78]),

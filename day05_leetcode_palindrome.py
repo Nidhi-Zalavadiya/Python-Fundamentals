@@ -4,6 +4,8 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
+        if x < 0:
+            return False
         actual = x #This stores the actual number has to check
         reverse = 0 #this is reverse number we'll update letter
         while x > 0: #loop from x to 0
