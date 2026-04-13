@@ -108,3 +108,18 @@
     this is O(n)
     time complexity as it cuts the steps to generate result
 '''
+
+
+
+'''
+    bigest thing i learn in this 5 days is to solve problem if it is hard than think about problem
+    why this problem occure , ways to solve problem then solution will automatically in mind
+    just do not give up on any problem
+    if there is problem there is solution too
+
+    biggest surprise i can say i was very weak in file handling and decorators but by implement logic by myself
+    and think about solution it surprise me that this was easy why i takes too much time to understand this
+
+    i want to solve real world problem like train model that use to solve problems which takes too much time for human
+    and also give accurate result
+'''
