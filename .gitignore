@@ -1,0 +1,31 @@
+# =========================
+# Python Cache (Ignores the __pycache__ folders in models/ and utils/ directories)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+env/
+.venv/
+.env
+
+# =========================
+# IDEs & OS Files (VS Code, Windows/Mac hidden files)
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Data Files (Optional)
+# =========================
+# By default, this will track notes.txt and students.csv since they look like 
+# small practice files for Day04. 
+# Stop tracking ALL text and csv files, uncomment the lines below:
+# *.csv
+# *.txt
