@@ -269,7 +269,7 @@ print("first 5 normalized values : ", Z_score[ : 5])
 # 8. Create a pass/fail array — True if student average >= 60, False if not
 #    How many students passed?
 pass_fail = avg_of_each_student > 60
-pass_students = np.sum(pass_fail == True)
+pass_students = pass_fail.sum()
 print(pass_fail)
 print(pass_students)
 
