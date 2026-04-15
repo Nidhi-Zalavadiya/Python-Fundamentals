@@ -206,7 +206,7 @@ print(df.isnull().sum())           # see which columns have missing data
 
 # 1. How many passengers survived vs did not survive?
 #    (use value_counts())
-survived_or_not = df["servived"].value_counts()
+survived_or_not = df["survived"].value_counts()
 print(f"survived : {survived_or_not[1]}, not servived : {survived_or_not[0]}")
 
 # 2. What was the survival rate (%) by passenger class (pclass)?
@@ -248,13 +248,13 @@ condition = [
 
 group = ["Child", "Adult", "Senior"]
 
-df["age_group"] = np.select(condition, group, default="Adult")
+df["age_group"] = np.select(condition, group, default="Unknown")
 print(df.head(10))
 
 # 8. What is the survival rate for each age_group?
 #    Use groupby
 survival_rate = df.groupby("age_group")["survived"].mean()
-print(survival_rate)
+print(survival_rate*100)
 
 
 print("\n--- Analysis complete ---")
