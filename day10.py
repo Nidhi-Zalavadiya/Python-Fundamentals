@@ -91,7 +91,8 @@ plt.show()
 '''
 # Why can't we use accuracy_score for regression problems?
 '''
-    Explain me i don't know this 
-    and it takes me time to understand the models this is too fast i think
-    but we also don't have time
+    accuracy_score gives exact number of match
+    in regression we find nearest number 
+    so accuracy_score will fail if there is single point mismatch
+    that's why we can not use accuracy_score in regression problems
 '''
