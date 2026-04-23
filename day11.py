@@ -64,7 +64,7 @@ plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.title("Titanic — Confusion Matrix")
 plt.tight_layout()
-plt.savefig("day11_confusion_matrix.png")
+plt.savefig("images\day11_confusion_matrix.png")
 plt.show()
 
 

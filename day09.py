@@ -59,7 +59,7 @@ plt.ylabel("Petal Width")
 plt.title("Iris — Petal Features")
 
 plt.tight_layout()
-plt.savefig("day09_iris.png")
+plt.savefig("images\day09_iris.png")
 plt.show()
 
 # 1. What does test_size=0.2 mean in simple words?

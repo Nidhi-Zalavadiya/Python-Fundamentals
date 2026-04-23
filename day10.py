@@ -63,7 +63,7 @@ plt.xlabel("Coefficient Value")
 plt.title("Feature Importance (Coefficients)")
 
 plt.tight_layout()
-plt.savefig("day10_linear_regression.png")
+plt.savefig("images\day10_linear_regression.png")
 plt.show()
 
 

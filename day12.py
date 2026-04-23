@@ -55,7 +55,7 @@ importances.plot(kind="bar", color="steelblue")
 plt.title("Feature Importance — Decision Tree")
 plt.ylabel("Importance Score")
 plt.tight_layout()
-plt.savefig("day12_importance.png")
+plt.savefig("images\day12_importance.png")
 plt.show()
 
 # Task E — Visualize the Tree
@@ -69,7 +69,7 @@ plot_tree(
     fontsize=9
 )
 plt.title("Decision Tree — Titanic (max_depth=4)")
-plt.savefig("day12_tree.png", bbox_inches="tight")
+plt.savefig("images\day12_tree.png", bbox_inches="tight")
 plt.show()
 
 

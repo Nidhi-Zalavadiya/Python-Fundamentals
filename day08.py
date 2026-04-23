@@ -184,7 +184,7 @@ plt.hist(scores, bins=5, color="blue", edgecolor = "black", label="Scores")
 plt.xlabel("Scores")
 plt.ylabel("Frequency")
 plt.title("Distribution of Scores")
-plt.savefig("Student Data Analisys")
+plt.savefig("images\Student Data Analisys")
 plt.show()
 # Each chart needs title, xlabel, ylabel.
 
@@ -195,7 +195,7 @@ plt.show()
 # Use sns.countplot(data=df, x="survived", hue="sex"). Add a title. 
 sns.countplot(data = titanic_data, x = "survived", hue="sex")
 plt.title("Titanic survival by Gender")
-plt.savefig("titanic_survival.png")
+plt.savefig("images\\titanic_survival.png")
 plt.show()  
 
 # Task 3 — Kaggle setup
