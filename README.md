@@ -157,7 +157,7 @@ I'm **Nidhi Zalavadiya** — a Python developer from Junagadh, Gujarat with 2+ y
 ```
 Python-Fundamentals/
 │
-├── 🐍 Python Core (Day 01–14)
+├── 🐍 Python Core (Day 01–13)
 │   ├── day01.py – day06.py          # Data types, OOP, functions
 │   ├── day03_noon_2sum.py            # LeetCode: Two Sum
 │   ├── day05_leetcode_*.py           # LeetCode: Palindrome, Contains Duplicate
