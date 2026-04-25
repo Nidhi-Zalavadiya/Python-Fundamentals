@@ -1,5 +1,11 @@
 # Random Forest + Model Comparison
 # Task A — Train Random Forest
+'''
+    fit()     → ALWAYS uses X_train, y_train
+    predict() → ALWAYS uses X_test
+    score()   → ALWAYS uses X_test, y_test
+'''
+
 import seaborn as sns
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -40,7 +46,7 @@ rf_model = RandomForestClassifier(
     random_state=42
 )
 
-rf_model.fit(X_test, Y_test)
+rf_model.fit(X_train, Y_train)
 rf_pred = rf_model.predict(X_test)
 
 print("Accuracy of random forest : ", accuracy_score(Y_test, rf_pred))
@@ -119,7 +125,7 @@ plt.show()
 '''
 # How many trees did you use and what accuracy did you get?
 '''
-    use 100 tree got accuracy 100
+    use 100 tree got accuracy 0.80 that is 80%
 '''
 # Which feature was most important according to Random Forest? Same as Decision Tree?
 '''
@@ -128,6 +134,6 @@ plt.show()
 # What is OOB score and why is it useful?
 '''
     OOB score is 0.77 that is likely 77%
-    it is random forest itself validation for ramaining data 
+    it is random forest itself validation for remaining data 
     which are not use in train the model
 '''
