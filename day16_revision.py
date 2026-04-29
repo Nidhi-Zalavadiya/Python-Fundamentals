@@ -248,3 +248,68 @@ plt.show()
     predict on model
     evalute result
 '''
+
+# Using Day 16 diabetes results:
+# From confusion matrix:
+# TN=82, FP=17, FN=18, TP=37
+
+TN, FP, FN, TP = 82, 17, 18, 37
+
+precision = TP / (TP + FP)
+recall    = TP / (TP + FN)
+f1        = 2 * (precision * recall) / (precision + recall)
+accuracy  = (TP + TN) / (TP + TN + FP + FN)
+
+print(f"Precision: {precision:.2f}")
+print(f"Recall:    {recall:.2f}")
+print(f"F1 Score:  {f1:.2f}")
+print(f"Accuracy:  {accuracy:.2f}")
+
+# Answer:
+# Which metric matters most for diabetes prediction and why?
+'''
+    Recall 
+    Recall = "Of all ACTUAL sick people, how many did I catch?"
+
+    Two types of errors in medical diagnosis:
+    FP (False Positive): You're healthy but I say sick
+        → Patient gets extra tests, worried, costs money
+        → Annoying but NOT deadly
+
+    FN (False Negative): You're SICK but I say healthy
+        → Patient goes home thinking they're fine
+        → Disease goes untreated → could die
+        → DANGEROUS 
+
+    So in medical: missing a sick person (FN) is 
+    worse than a false alarm (FP)
+    That's why Recall matters more than Precision here
+
+    Your model Recall = 67% — means you missed 33% of 
+    diabetic patients. In a real hospital that's too low.
+    Target should be 85%+ for medical models.
+'''
+# What does your F1 score tell you?
+'''
+    F1 = balance between Precision and Recall
+
+    When to use F1 instead of just accuracy?
+    When classes are imbalanced
+    (more healthy than sick in diabetes data)
+
+    F1 = 2 * (Precision * Recall) / (Precision + Recall)
+    = harmonic mean of both
+
+    Your F1 ≈ 0.68
+
+    Interpretation:
+    F1 = 1.0 → perfect model
+    F1 = 0.68 → decent but room to improve
+    F1 = 0.0 → completely wrong
+
+    Think of it as: "single number that captures both
+    how precise AND how complete my predictions are"
+
+    When precision and recall are both high → F1 is high
+    When one is low → F1 punishes you
+'''
