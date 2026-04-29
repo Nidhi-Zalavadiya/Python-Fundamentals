@@ -29,7 +29,7 @@ I'm **Nidhi Zalavadiya** — a Python developer from Junagadh, Gujarat with 2+ y
 ### 📊 Student Score Analysis — Pandas + Matplotlib/Seaborn
 > *Real dataset. 4 different chart types. Data cleaning + visualization pipeline.*
 
-![Student Data Analysis](images/Student_Data_Analisys.png)
+![Student Data Analysis](images/Student Data Analisys.png)
 
 **What I did:**
 - Loaded and cleaned a student dataset with city, Python score, and ML score columns
@@ -157,7 +157,7 @@ I'm **Nidhi Zalavadiya** — a Python developer from Junagadh, Gujarat with 2+ y
 ```
 Python-Fundamentals/
 │
-├── 🐍 Python Core (Day 01–14)
+├── 🐍 Python Core (Day 01–13)
 │   ├── day01.py – day06.py          # Data types, OOP, functions
 │   ├── day03_noon_2sum.py            # LeetCode: Two Sum
 │   ├── day05_leetcode_*.py           # LeetCode: Palindrome, Contains Duplicate
