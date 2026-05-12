@@ -29,15 +29,15 @@ I'm **Nidhi Zalavadiya** — a Python developer from Junagadh, Gujarat with 2+ y
 ### 📊 Student Score Analysis — Pandas + Matplotlib/Seaborn
 > *Real dataset. 4 different chart types. Data cleaning + visualization pipeline.*
 
-![Student Data Analysis](images/Student Data Analisys.png)
+![Student Data Analysis](images/Student%20Data%20Analisys.png)
 
 **What I did:**
 - Loaded and cleaned a student dataset with city, Python score, and ML score columns
 - Built 4 chart types in one figure: bar chart, line plot, scatter plot, histogram
-- Used `groupby()` to find average scores per city — Surat students scored highest
-- Identified correlation between Python score and ML score using scatter
+- Used `groupby()` to find average scores per city — Surat students scored the highest
+- Identified a correlation between Python score and ML score using scatter
 
-**Code skills demonstrated:** `pandas`, `matplotlib.pyplot`, `seaborn`, `groupby`, `subplots`
+**Code skills demonstrated:** `pandas`, `matplotlib.pyplot`, `seaborn`, `groupby`, `subplots.`
 
 ---
 
@@ -47,7 +47,7 @@ I'm **Nidhi Zalavadiya** — a Python developer from Junagadh, Gujarat with 2+ y
 ![Iris EDA](images/day09_iris.png)
 
 **What I did:**
-- Loaded Iris dataset from sklearn, converted to DataFrame
+- Loaded Iris dataset from sklearn, converted to a DataFrame
 - Built side-by-side scatter plots: Sepal features vs Petal features
 - **Key insight:** Petal features separate the 3 classes cleanly — Sepal features overlap. This means petal measurements will be more important features in any classifier.
 
@@ -63,7 +63,7 @@ I'm **Nidhi Zalavadiya** — a Python developer from Junagadh, Gujarat with 2+ y
 **What I did:**
 - Trained Linear Regression on California Housing dataset (20,000+ samples)
 - Plotted Actual vs Predicted — model follows the trend but struggles at high prices (common in linear models)
-- Analyzed feature coefficients: `AveBedrms` and `MedInc` are strongest positive predictors; `Latitude` and `Longitude` are negative (location effect)
+- Analyzed feature coefficients: `AveBedrms` and `MedInc` are the strongest positive predictors; `Latitude` and `Longitude` are negative (location effect)
 
 **Key learning:** A straight line can't capture non-linear price jumps — this is exactly why we need tree-based models.
 
@@ -72,7 +72,7 @@ I'm **Nidhi Zalavadiya** — a Python developer from Junagadh, Gujarat with 2+ y
 ---
 
 ### 🎯 Logistic Regression — Titanic Survival Classifier
-> *Binary classification. Confusion matrix analysis. Understanding precision vs recall tradeoff.*
+> *Binary classification. Confusion matrix analysis. Understanding the precision vs recall tradeoff.*
 
 ![Confusion Matrix](images/day11_confusion_matrix.png)
 
@@ -84,7 +84,7 @@ I'm **Nidhi Zalavadiya** — a Python developer from Junagadh, Gujarat with 2+ y
 
 ![Titanic Gender](images/titanic_survival.png)
 
-**Key learning:** Accuracy alone is misleading. A model predicting "nobody survives" gets 61% accuracy on Titanic — but it's useless. Confusion matrix tells the real story.
+**Key learning:** Accuracy alone is misleading. A model predicting "nobody survives" gets 61% accuracy on Titanic — but it's useless. The confusion matrix tells the real story.
 
 **Code skills demonstrated:** `LogisticRegression`, `confusion_matrix`, `classification_report`, `seaborn.heatmap`
 
